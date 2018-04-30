@@ -45,5 +45,17 @@ namespace FormsApp
             }
             MessageBox.Show("Tables Created!");
         }
+
+        private void AddCustomer_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO Customer VALUES('" +
+                Name.Text + "','" + Address.Text + "')", conn);
+            using (conn)
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+        }
     }
 }
