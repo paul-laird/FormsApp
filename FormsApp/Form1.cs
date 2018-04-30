@@ -47,14 +47,13 @@ namespace FormsApp
         }
 
         private void AddCustomer_Click(object sender, EventArgs e)
-        {
+        {//DBS');DROP TABLE OrderLine;DROP TABLE Orders;DROP TABLE Product;DROP TABLE Customer;--
             SqlCommand cmd = new SqlCommand("INSERT INTO Customer VALUES('" +
                 Name.Text + "','" + Address.Text + "')", conn);
             using (conn)
             {
                 conn.Open();
                 cmd.ExecuteNonQuery();
-
             }
         }
     }

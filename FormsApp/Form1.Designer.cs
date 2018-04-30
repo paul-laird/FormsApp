@@ -99,7 +99,7 @@
             this.Controls.Add(this.Address);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.initialiseButton);
-            this.Name = "Form1";
+//            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
